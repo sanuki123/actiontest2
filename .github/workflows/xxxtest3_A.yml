@@ -1,0 +1,16 @@
+name: xxxtest3_A
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  myjob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "HELLO MAIN"
+
+  call-workflow:
+    needs: [myjob]
+    uses: ./.github/workflows/xxx_test3_B.yml
+

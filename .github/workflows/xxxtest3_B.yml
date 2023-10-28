@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "HELLO CALL"
-        echo "佐貫テスト" >> $GITHUB_STEP_SUMMARY
+          echo "HELLO CALL"
+          echo "佐貫テスト" >> $GITHUB_STEP_SUMMARY
       
 

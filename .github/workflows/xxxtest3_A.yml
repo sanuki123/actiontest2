@@ -12,5 +12,5 @@ jobs:
 
   call-workflow:
     needs: [myjob]
-    uses: ./.github/workflows/xxx_test3_B.yml
+    uses: ./.github/workflows/xxxtest3_B.yml
 

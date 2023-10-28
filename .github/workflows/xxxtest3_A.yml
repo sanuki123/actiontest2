@@ -15,4 +15,4 @@ jobs:
   call-workflow:
     needs: [myjob]
     uses: ./.github/workflows/xxxtest3_B.yml
-
+    runs: echo "uuuuuuuuuuu"

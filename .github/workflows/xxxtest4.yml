@@ -8,14 +8,19 @@ env:
 
 jobs:
 
-  myjob:
+  myjob1:
     runs-on: ubuntu-latest
     env:
       ABC: 'aaaa11112222'
     steps:
       - run: |
           echo "SNK $SNK"
-          echo "SNK ${{env.SNK}}"
           echo "ABC $ABC"
-          echo "ABC ${{env.ABC}}"
+
+  myjob2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "SNK $SNK"
+          echo "ABC $ABC"
 

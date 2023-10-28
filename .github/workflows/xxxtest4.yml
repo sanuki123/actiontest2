@@ -16,8 +16,10 @@ jobs:
       - run: |
           echo "SNK $SNK"
           echo "ABC $ABC"
+          echo "SNK=cccc vvvv" >> $GITHUB_ENV
 
   myjob2:
+    needs: myjob1
     runs-on: ubuntu-latest
     steps:
       - run: |

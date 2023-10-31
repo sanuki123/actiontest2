@@ -11,6 +11,17 @@ jobs:
   testjob1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "佐貫あああ"
+      - 
+        run: |
+          echo "佐貫あああ"
+          xx="1"
+          case $xx in
+            "1"    ) a="aaaa" ;;
+            "22"   ) a="bbbb" ;;
+            "3333" ) a="cccc" ;;
+            *      ) a="xxxx" ;;
+          esac
+          echo $a
+esac
       
    

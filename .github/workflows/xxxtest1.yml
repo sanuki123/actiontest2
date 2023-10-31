@@ -22,6 +22,5 @@ jobs:
             *      ) a="xxxx" ;;
           esac
           echo $a
-esac
       
    

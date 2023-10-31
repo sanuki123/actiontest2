@@ -14,7 +14,7 @@ jobs:
       - 
         run: |
           echo "佐貫あああ"
-          xx="1"
+          xx="ww"
           case $xx in
             "1"    ) a="aaaa" ;;
             "22"   ) a="bbbb" ;;

@@ -14,6 +14,7 @@ jobs:
           echo "123"
           exit 1
         continue-on-error: true
+        id: stepx
       - 
         run: |
           echo "123"
@@ -21,5 +22,6 @@ jobs:
       - 
         run: |
           echo "123"
+          echo ${{ steps.stepx.outcome }}
       
    

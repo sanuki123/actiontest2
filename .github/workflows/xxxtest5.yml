@@ -13,6 +13,11 @@ jobs:
         run: |
           echo "123"
           exit 1
+        continue-on-error: true
+      - 
+        run: |
+          echo "123"
+      
       - 
         run: |
           echo "123"

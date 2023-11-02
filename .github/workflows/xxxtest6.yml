@@ -6,26 +6,29 @@ jobs:
   testjob1:
     runs-on: ubuntu-latest
     steps:
+
       - 
         run: |
           echo "1"
+
       - 
         run: |
           echo "2"
           exit 1
         continue-on-error: true
         id: step1
+
       - 
         run: |
           echo "3"
 
+      -
         run: |
           echo "4"
           exit 1
         continue-on-error: true
         id: step2
 
-      
       - 
         env:
           S1: ${{ steps.step1.outcome }}

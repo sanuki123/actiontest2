@@ -26,10 +26,16 @@ jobs:
           
           sudo apt-get update && sudo apt-get install -y xmlstarlet libxml2-utils
           
+          echo "---------------------------"
+
           xmlstarlet --version
           
+          echo "---------------------------"
+
           xmllint --version
           
+          echo "---------------------------"
+
           #if [ "${{ steps.step1.outcome }}" == "failure" ]; then
           #  exit 1
           #fi

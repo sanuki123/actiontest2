@@ -32,7 +32,7 @@ jobs:
       - 
         env:
           S1: ${{ steps.step1.outcome }}
-          S1: ${{ steps.step2.outcome }}
+          S2: ${{ steps.step2.outcome }}
         run: |
           echo "S1=$S1"
           echo "S2=$S2"

@@ -23,5 +23,13 @@ jobs:
         run: |
           echo "123"
           echo ${{ steps.stepx.outcome }}
+          
+          xmlstarlet --version
+          
+          xmllint --version
+          
+          #if [ "${{ steps.step1.outcome }}" == "failure" ]; then
+          #  exit 1
+          #fi
       
    

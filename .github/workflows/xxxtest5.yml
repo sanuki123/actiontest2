@@ -24,7 +24,7 @@ jobs:
           echo "123"
           echo ${{ steps.stepx.outcome }}
           
-          xmlstarlet --version
+          #xmlstarlet --version
           
           xmllint --version
           

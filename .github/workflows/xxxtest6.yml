@@ -7,36 +7,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - 
+      - name: step1
         run: |
           echo "1"
+          exit 1
 
-      - 
+      - name: step2
         run: |
           echo "2"
-          exit 1
-        continue-on-error: true
-        id: step1
 
-      - 
+      - name: step3
+        continue-on-error: true
         run: |
           echo "3"
-          exit 1
 
-      -
+      - name: step4
         run: |
           echo "4"
-          exit 1
-        continue-on-error: true
-        id: step2
 
-      - 
-        if: always()
-        env:
-          S1: ${{ steps.step1.outcome }}
-          S2: ${{ steps.step2.outcome }}
+      - name: step5
+        if always()
         run: |
-          echo "S1=$S1"
-          echo "S2=$S2"
-          
-   
+          echo "5"
+
+      - name: step6
+        run: |
+          echo "6"
+
+      - name: step7
+        continue-on-error: true
+        run: |
+          echo "7"
+
+      - name: step8
+        run: |
+          echo "8"
+
+  

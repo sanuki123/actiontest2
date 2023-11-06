@@ -19,20 +19,20 @@ jobs:
         id:   step2
         run: |
           echo "2"
-          echo steps.step1.conclusion
+          echo ${{steps.step1.conclusion}}
 
       - name: step3
         id:   step3
         run: |
           echo "3"
-          echo steps.step2.conclusion
+          echo ${{steps.step2.conclusion}}
           
 
       - name: step4
         id:   step4
         run: |
           echo "4"
-          echo steps.step3.conclusion
+          echo ${{steps.step3.conclusion}}
 
 
       - name: step5
@@ -40,27 +40,27 @@ jobs:
         if: always()
         run: |
           echo "5"
-          echo steps.step4.conclusion
+          echo ${{steps.step4.conclusion}}
 
 
       - name: step6
         id:   step6
         run: |
           echo "6"
-          echo steps.step5.conclusion
+          echo ${{steps.step5.conclusion}}
 
       - name: step7
         id:   step7
         run: |
           echo "7"
-          echo steps.step6.conclusion
+          echo ${{steps.step6.conclusion}}
 
 
       - name: step8
         id:   step8
         run: |
           echo "8"
-          echo steps.step7.conclusion
+          echo ${{steps.step7.conclusion}}
 
 
   

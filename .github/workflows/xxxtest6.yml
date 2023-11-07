@@ -12,8 +12,12 @@ jobs:
       - name: step1
         id:   step1
         run: |
-          a=$("0.9999" | awk '{print substr($0, 1, index($0,".")+3)}')
-          b=$("0.9" | awk '{print substr($0, 1, index($0,".")+3)}')
-          c=$("1" | awk '{print substr($0, 1, index($0,".")+3)}')
+          a=$(echo "0.9999" | awk '{print substr($0, 1, index($0,".")+3)}')
+          b=$(echo "0.9" | awk '{print substr($0, 1, index($0,".")+3)}')
+          c=$(echo "1" | awk '{print substr($0, 1, index($0,".")+3)}')
+          
+          echo "<$a>"
+          echo "<$b>"
+          echo "<$c>"
 
   

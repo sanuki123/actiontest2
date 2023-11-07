@@ -13,5 +13,7 @@ jobs:
         id:   step1
         run: |
           echo "0.9999" | awk '{print substr($0, 1, index($0,".")+3)}'
+          echo "0.9" | awk '{print substr($0, 1, index($0,".")+3)}'
+          echo "1" | awk '{print substr($0, 1, index($0,".")+3)}'
 
   

@@ -1,0 +1,18 @@
+name: xxxtest9
+on: 
+  workflow_dispatch:
+  
+  push:
+    branches-ignore:
+      - 'main'
+  
+jobs:
+  testjob1:
+    runs-on: ubuntu-latest
+    steps:
+
+      - 
+        run: |
+          echo "2222222222"
+
+  

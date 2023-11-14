@@ -1,7 +1,5 @@
 name: xxxtest6
 on: 
-  push:
-  
   workflow_dispatch:
   
 jobs:

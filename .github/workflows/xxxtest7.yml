@@ -13,7 +13,7 @@ jobs:
 
       - 
         run: |
-          echo "aaaaaa!!!!!!"
+          echo "aaaaaa!!!!!!!!!"
           echo "ref=${{ github.ref }}"
           echo "ref_name=${{ github.ref_name }}"
 

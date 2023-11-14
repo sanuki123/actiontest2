@@ -17,6 +17,6 @@ jobs:
         run: |
           echo "aaaaaa!!!!"
           echo "ref=${{ github.ref }}"
-          echo "ref=${{ github.ref_name }}"
+          echo "ref_name=${{ github.ref_name }}"
 
   
